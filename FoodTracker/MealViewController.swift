@@ -10,7 +10,7 @@ import UIKit
 import os.log
 
 class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    
     // MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
@@ -41,7 +41,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         // Enable the Save button only if the text field has a valid Meal name.
         updateSaveButtonState()
     }
-
+    
     // MARK: UITextFieldDelegate
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -138,7 +138,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         imagePickerController.delegate = self
         present(imagePickerController, animated: true, completion: nil)
     }
-
+    
     // MARK: Private Methods
     private func updateSaveButtonState() {
         
